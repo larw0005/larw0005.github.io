@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-image: url("../img/spring.png")
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*
+	Colours
+
+	Blue: #6dcff6;
+	Green: #7cc576;
+	Black text: #ffff;
+
+*/
+
+ .container {
+
+ 	width: 100%;
+ }
+
+
+header {
+	background-color: #7cc576; 
+	}
+
+.page-title {
+
+	text-align: left;
+	padding: 15px;
+	display: block;
+	font-size: 32px;
+	font-weight: bold;
+
+}
+
+.logo {
+	float: left;
+	width: 136px;
+	box-sizing: border-box;
+	background-color: #7cc576;
+}
+
+
+
+nav li {
+	background-color: #6dcff6;
+	width: 15%; 
+	float: left;
+	box-sizing: border-box;
+	margin: 20px;
+	text-align: center;
+	
+}
+
+nav a {
+	background-color: #6dcff6;
+	text-align: center;
+	text-decoration: none;
+	text-decoration-color: #ffff;
+	display: block
+	padding: 20px;
+	width: 100%;
+
+}
+
+.main-column {
+	float: left;
+	width: 90%;
+	box-sizing: border-box;
+	margin: 2px;
+	}
+
+/*.column-side {
+	float: right;
+	width: 30%;
+	box-sizing: border-box;*/
+
+/*aside {
+	display: block;
+	width: 33%;
+
+	float: right;
+
+}*/
+	 
+
+.image-row {
+
+	overflow: hidden;
+}
+
+.image-row figure {
+	float: left;
+	width: 25%;
+	/*width:185px;
+	height:140px;*/
+	padding: 25px;
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+
+.image-row figcaption {
+	text-align: left;
+}
+
+footer {
+	background-color: #7cc576;
+	width: 100%;
+	text-align: left;
+	padding: 10px;
+}
+
+.footer-class {
+	text-align: left;
+	padding: 40px; 
+}
+
+.social-media {
+	text-align: right;
+	margin-right: 20px
+	 
+}
+.footer-text {
+	background-color: #7cc576;
+	text-align: left;
+	padding: 10px;
+}
+
