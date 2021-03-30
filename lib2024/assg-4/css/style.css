@@ -55,11 +55,9 @@ table {
 
 /*
 	Colours
-
 	Blue: #6dcff6;
 	Green: #7cc576;
 	Black text: #ffff;
-
 */
 
  .container {
@@ -93,12 +91,13 @@ header {
 
 nav li {
 	background-color: #6dcff6;
-	width: 15%; 
+	width: 20%; 
 	float: left;
 	box-sizing: border-box;
 	margin: 20px;
 	text-align: center;
-	
+
+
 }
 
 nav a {
@@ -106,32 +105,36 @@ nav a {
 	text-align: center;
 	text-decoration: none;
 	text-decoration-color: #ffff;
-	display: block
+	display: block;
 	padding: 20px;
 	width: 100%;
 
 }
 
-.main-column {
+#main-section {
+
+	float:left;
+	width: 100%;
+	box-sizing: border-box; 
+}
+
+.main-section {
 	float: left;
 	width: 90%;
 	box-sizing: border-box;
 	margin: 2px;
-	}
+}
 
-/*.column-side {
+
+/*I had styling for the sidebar content below, but when page was rendered it pushed secondary content down in to the footer. My width settings or coding for the main content with the measurements
+ are off but I can't figure it out
+
+.sidebar-section {
 	float: right;
-	width: 30%;
+	width: 10%;
 	box-sizing: border-box;*/
 
-/*aside {
-	display: block;
-	width: 33%;
 
-	float: right;
-
-}*/
-	 
 
 .image-row {
 
@@ -141,8 +144,6 @@ nav a {
 .image-row figure {
 	float: left;
 	width: 25%;
-	/*width:185px;
-	height:140px;*/
 	padding: 25px;
 	margin-left: 40px;
 	margin-bottom: 20px;
@@ -155,23 +156,19 @@ nav a {
 footer {
 	background-color: #7cc576;
 	width: 100%;
-	text-align: left;
-	padding: 10px;
+	
 }
-
-.footer-class {
-	text-align: left;
-	padding: 40px; 
-}
+	
 
 .social-media {
 	text-align: right;
-	margin-right: 20px
-	 
+	margin-right: 10px;
+	
+
 }
 .footer-text {
 	background-color: #7cc576;
 	text-align: left;
 	padding: 10px;
+	
 }
-
