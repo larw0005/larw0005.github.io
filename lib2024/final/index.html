@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8">
+	<title>LIB 2024 Final</title>
+	<!-- Include Font Awesome Style Sheet -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!--fonts style sheet-->
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<!--CSS base external style sheet-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!--header with logo and top nav bar starts-->
+	<!--coding for logo is here-->
+	<header class="site-header" id="site-header">
+		<div class="logo">MY LOGO</div>
+	<!--<h1>MY LOGO</h1>-->
+	<!--coding for main desktop navigation here-->
+		<nav class="main-nav-container desktop-nav">
+	 		<ul class="main-nav clearfix">
+				<li>
+					<a href="home.html">HOME</a>
+				</li>
+				<li>
+					<a href="about.html">ABOUT</a>
+				</li>
+				<li>
+					<a href="schedule.html">SCHEDULE</a>
+				</li>
+				<li>
+					<a href="portfolio.html">PORTFOLIO</a>
+				</li>
+				<li>
+					<a href="contact.html">CONTACT</a>
+				</li>
+			</ul>
+		</nav>
+	<!--main desktop navigation ends - mobil navigation begins below-->
+	<div class="ham">
+		<i class="fas fa-bars"></i>
+	</div>
+	<div class="mobile-nav-container">
+		<nav class="main-nav-container mobile-nav">
+		<ul class="main-nav">
+			<li>
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="schedule.html">Schedule</a>
+				</li>
+				<li>
+					<a href="portfolio.html">Porfolio</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<!--mobile navigation ends-->
+</header>
+<!--end of header-->
+<!--main content starts-->
+<main class="main clearfix" id="main">
+	<!--main website content begins-->
+	<article class="col-main site-content">
+		<!--main content begins-->
+		<section class="main-content">
+			<h2>ABOUT</h2>
+			<br>
+			<p> 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing elit pellentesque habitant morbi tristique senectus. Rhoncus mattis rhoncus urna neque viverra justo. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Sodales ut eu sem integer vitae. Sed nisi lacus sed viverra tellus in. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Mi tempus imperdiet nulla malesuada pellentesque elit eget. Ipsum faucibus vitae aliquet nec ullamcorper sit.
+			</p>
+			<br>
+			<p>
+				Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Magna fringilla urna porttitor rhoncus dolor. Volutpat commodo sed egestas egestas. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Nulla facilisi etiam dignissim diam quis enim. Vitae tortor condimentum lacinia quis vel eros donec. Viverra suspendisse potenti nullam ac tortor. Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. 
+			</p>
+		</section>
+	</article>
+<!--sidebar with image content starts-->
+<aside class="col-main site-sidebar">
+	<img src="img/pexels-forest-edit.jpg" alt="Image 1" width="300" height="200">
+</aside>
+
+<!--sidebar content ends-->
+	 <!--table displaying schedule content begins-->
+
+	 <article class="col-main table-content">
+		<section class="table">
+			<h2>SCHEDULE</h2> 
+			<table id="schedule">
+				<thead>
+					<tr>
+						<th>TIME</th>
+						<th>MONDAY</th>
+						<th>TUESDAY</th>
+						<th>WEDNESDAY</th>
+						<th>THURSDAY</th>
+						<th>FRIDAY</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>09:00 - 11:00</td>
+						<td>Communications I</td>
+						<td>Client Services</td>
+						<td>Special Collections</td>
+						<td>Directed Research Seminar</td>
+						<td>Client Services</td>
+					</tr>
+					<tr>
+						<td>11:00 - 12:30</td>
+						<td>Reference</td>
+						<td>Internet App</td>
+						<td>Library Software</td>
+						<td>French</td>
+						<td>Reference</td>
+					</tr>
+					<tr>
+						<td>14:00 - 15:00</td>
+						<td>Acquisitions</td>
+						<td>General Elective</td>
+						<td>Marketing</td>
+						<td>Emerging Library Tech</td>
+						<td>Library Software</td>
+					<tr>
+						<td>15:30 - 17:30</td>
+						<td>French</td>
+						<td>French</td>
+						<td>Acquisitions</td>
+						<td>Subject Analysis</td>
+						<td>Internet App</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</article>
+	<br>
+<!--table ends-->
+<!--section for profile form begins-->
+	<section id=html-form class="form">
+		<h2>EDIT PROFILE</h2>
+			<form action="somepage.php" method="post">
+				<div id="name-container" class="form-elm">
+					<label for="Name">Name:</label>
+					<input type="text" name="Name" id="Name" placeholder="First Name, Last Name" required>
+				</div>
+				<div id="email-container" class="form-elm">
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" value="myemail@on.com" readonly>
+				</div>
+				<div id="ads-container" class="form-elm">
+					<label for="address">Address:</label>
+					<input type="text" name="address" id="address" required>
+				</div>
+				<div id="city-container" class="form-elm">
+					<label for="city">City:</label>
+					<input type="text" name="city" id="city" required>
+				</div>
+				<div id="province-drop-container" class="form-elm">
+				<label for="province">Province:</label>
+					<select name="province" id="province">
+						<option value="Select Province" selected>Select province</option>
+						<option value="AB">Alberta</option>
+						<option value="BC">British Columbia</option>
+						<option value="MB">Manitoba</option>
+						<option value="NB">New Brunswick</option>
+						<option value="NFLD">Newfoundland</option>
+						<option value="NS">Nova Scotia</option>
+						<option value="ON">Ontario</option>
+						<option value="PEI">Prince Edward Island</option>
+						<option value="QB">Quebec</option>
+						<option value="SK">Saskatchewan</option>
+						<option value="NT">Nunavut</option>
+						<option value="YN">Yukon</option>
+					</select>
+				</div>
+				<div id="postcode-container" class="form-elm">
+					<label for="postcode">Postal Code:</label>
+					<input type="text" name="postcode" id="postcode" placeholder="A1A 1A1" required>
+				</div>
+			<div class="row">
+				<input type="submit" value="Submit">
+			</div>
+			</form>
+		</section>
+		<br>
+	<!--end of profile form-->
+<!--profile contact info card begins-->
+	
+	<section id="contact-card" class="card-info">
+		<h2>PROFILE INFO</h2>
+		<p>
+			<i class="fas fa-user-circle"></i>
+		</p>
+		<p>John Doe<br>
+			JohnDoe@on.com<br>
+			1385 Woodroffe Ave, Nepean<br>
+			ON, K2G 1V8<br>
+		</p>
+		<p>
+			<a href="mailto:johndoe@on.com">
+				<i class="fas fa-envelope"></i>
+			</a>
+		</p>
+	</section>
+</main>
+<br>
+
+<!--footer content starts-->
+<footer id="footer" class="footer-info">
+		<div class="footer-container">
+			<section class="col-footer quick-links">
+				<h3>QUICK LINKS</h3>
+				<nav class="footer-nav-container">
+				<ul class="footer-nav">
+						<li>
+							<a href="schedule.html">SCHEDULE</a>
+						</li>
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+						<li>
+							<a href="porfolio.html">PORTFOLIO</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+
+			<section class="col-footer social-media">
+				<h3>FOLLOW US</h3>
+				<nav>
+					<a href="https://www.facebook.com">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="https://www.youtube.com">
+						<i class="fab fa-youtube"></i>
+					</a>
+					<a href="https://twitter.com">
+						<!--img src="img/twitter.png" alt="Image 4" width="50" height="50"-->
+						<i class="fab fa-twitter"></i>
+					</a>
+				</nav>
+			</section>
+		</div>
+
+		<section class="col-footer address-info">
+				<h3>ADDRESS</h3>
+					<p class="footer">1385 Woodroffe Avenue</p>
+					<p class="footer">Nepean, ON K2G 1V8</p>
+					<p class="footer">Canada</p>
+			</section>
+	</footer>
+</body>
+</html>

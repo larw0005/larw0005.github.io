@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS clearfix info*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*
+	Colour Pallette
+
+	Medium Turquoise: #48D1CC;
+	Gainsboro: #DCDCDC;
+	Black: #000000;
+	White: #ffffff;
+	SlateGray: #708090;
+
+	Social media colours: XXXXXXX;
+
+*/
+
+/*
+	MOBILE FIRST STYLING */
+
+
+
+.col-main, .col-footer, .form, .card-info {
+	width: 100%;
+}
+
+
+.logo {
+	float: left;
+	width: 100px;
+	padding: 20px;
+	box-sizing: border-box;
+	
+}
+
+.logo {
+	font-family: 'aliceregular', serif;
+	font-weight: bold;
+	font-size: 36px;
+	color: #48D1CC;
+
+}
+
+.desktop-nav {
+	float: left;
+	width: calc(100% - 100px);
+	background: #48D1CC;
+	display: none;
+	max-width: 600px;
+}
+
+.desktop-nav ul {
+	width: 100%;
+}
+
+.desktop-nav li {
+	box-sizing: border-box;
+	width: 20%;
+	float: left;
+	background: #48D1CC;
+}
+
+.main-nav a {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+}
+
+.mobile-nav a {
+	width: 100%;
+	clear: both;
+}
+
+.ham {
+	float: right;
+	font-size: 20px;
+}
+
+.mobile-nav-container {
+	position: relative;
+	clear: both;
+}
+
+.mobile-nav li {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	background: #48D1CC;
+	border-bottom: 2px solid #121212;
+}
+
+.mobile-nav li:hover {
+	width: 100%;
+	background: #DCDCDC;
+}
+/* main content styling */
+
+
+
+h2 {
+	color: #72a9ae;
+	font-weight: bold;
+	font-size: 32px;
+	
+}
+
+
+h2,
+p,
+th,
+td,
+label,
+input
+ {
+	font-family: 'Old Standard TT', serif;
+	font-size: 16px;
+}
+
+main {
+	 background-image: url("../img/repeated-square.png");
+}
+
+
+#schedule, 
+th, 
+td {
+	border: 1px solid black;
+	text-align: center;
+	padding: 5px;
+}
+
+#schedule tr:nth-child(even){background-color: #DCDCDC;}
+
+#schedule th {
+	font-weight: bold;
+	color: #48D1CC;
+	background-color: #DCDCDC;
+}
+
+#schedule th:hover {
+	background: #ffffff;
+}
+
+input[type=submit] {
+  background-color: #DCDCDC;
+  color: black;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=submit]:hover {
+   background: #48D1CC;
+}
+
+#form-elm {
+	font-family: 'Old Standard TT', serif;
+}
+
+.fa-user-circle {
+	text-align: center;
+	font-size: 16px;
+	color: black;
+}
+
+/* footer styling */
+
+footer {
+	background: #708090;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+.quick-links {
+	color: #DCDCDC;
+	font-weight: bold;
+}
+
+ .social-media {
+	color: #DCDCDC;
+	font-weight: bold;
+}
+
+.fa-facebook {
+	color: #3b5999;
+	font-size: 24px;
+}
+
+.fa-youtube {
+	color: #cd201f;
+	font-size: 24px;
+}
+
+.fa-twitter {
+	color: #55acee;
+	font-size: 24px;
+}
+
+.address-info {
+	color: #DCDCDC;
+	font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+
+	header, main, footer {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	.desktop-nav {
+		display: block;
+
+	}
+
+	.desktop-nav li:hover {
+	width: 20%;
+	background: #DCDCDC;
+}
+
+	.mobile-nav {
+		display: none;
+	}
+
+	.ham {
+		display: none;
+	}
+
+	.site-content {
+		float: left;
+		width: 60%;
+		box-sizing: border-box;
+	}
+
+	.site-sidebar {
+		float: left;
+		width: 40%;
+		box-sizing: border-box;
+	}
+
+	#schedule th:hover {
+	background: #ffffff;
+}
+
+	.form {
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+	}
+
+	.card-info {
+		float: left;
+		width: 50%;
+		border-style: outset; 
+		box-sizing: border-box;
+
+	}
+
+	.col-footer {
+		width: 33%;
+		box-sizing: border-box;
+		padding: 10px;
+		float: left;
+	}
+
+}
