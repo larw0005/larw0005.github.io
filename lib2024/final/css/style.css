@@ -297,8 +297,7 @@ footer {
 }
 
 .footer-container {
-	float: center;
-	padding: 40px;
+		padding: 40px;
 }
 
 @media only screen and (min-width: 768px) {
